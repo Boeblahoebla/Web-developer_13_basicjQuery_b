@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>jQuery common methods</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <!-- Headers -->
+        <!-- ------- -->
+        <h1>jQuery common methods</h1>
+        <h2>This is a demonstration of some common jQuery methods</h2>
+
+        <!-- Introduction -->
+        <!-- ------------ -->
+        <p>This project is used as a demo of the most used jQuery methods like</p>
+        <ul>
+            <li>.val()</li>
+            <li>.text()</li>
+            <li>.attr()</li>
+            <li>.html()</li>
+            <li>.addClass()</li>
+            <li>.removeClass()</li>
+            <li>.toggleClass()</li>
+        </ul>
+        <p>Each topic is clarified in its own section having an identified div with some content illustrating its functionality</p>
+        <p>Check the console using the browser's developer tools</p>
+
+        <!-- Topics -->
+        <!-- ------ -->
+
+        <h3>.val()</h3>
+        <div id="val">
+            <input type="text" placeholder="What is your name" id="inputName">
+            <button type="button" id="btnLogValue">Log inputvalue</button>
+            <button type="button" id="btnChangeValue">Change value</button>
+
+        </div>
+
+        <h3>.text()</h3>
+        <div id="textDiv">
+            <p id="paragraph">Lorem ipsum dolor sit, <span id="subText">amet consectetur adipisicing elit. Atque commodi sit at asperiores beatae ullam amet repellendus rerum eveniet perspiciatis. Magnam officiis vitae soluta culpa modi suscipit sit corporis doloribus.</span>                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum vitae laboriosam deleniti debitis quo illo delectus eligendi nulla sapiente. Commodi ducimus ad nostrum. Molestias illo delectus ratione odio asperiores inventore. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Voluptate, dicta. Est odit ex sequi dolor, obcaecati fugit neque delectus velit ea maiores rerum numquam repudiandae facilis sapiente molestiae dolorem inventore?
+            </p>
+            <button type="button" id="btnChangeText">Change text</button>
+            <h5>CAUTION!</h5>
+            <p>Using the .text() on a list of elements, the method strips away all the html tags and returns the text of <strong>all elements contatenated into one single string</strong></p>
+            <p>These buttons illustrate this variability by showing the text() output of the following unordened list.</p>
+            <ul id="ulTextSection">
+                <li class="ulTextLi">Option1</li>
+                <li class="ulTextLi">Option2</li>
+                <li class="ulTextLi">Option3</li>
+            </ul>
+
+            <button type="button" id="btnLogLisText">Log li with class ulTextLi</button>
+            <button type="button" id="btnLogUlText">Log whole ul</button>
+
+        </div>
+
+        <h3>.attr()</h3>
+        <div id="attr">
+            <img src="http://i.imgur.com/zvANQeG.jpg" width="20%" height="20%" alt="friendly face" id="attrImage">
+            <button type="button" id="btnChangeImage">Change image</button>
+
+        </div>
+
+        <h3>.html()</h3>
+        <div>
+            <div id="htmlDiv">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reprehenderit aliquam, deserunt cum provident asperiores nostrum fuga reiciendis sed ab officia repellendus error blanditiis architecto repudiandae corporis nam voluptatum
+                    quas!
+                </p>
+                <ul>
+                    <li>listItem1</li>
+                    <li>listItem2</li>
+                    <li>listItem3</li>
+                </ul>
+            </div>
+            <button type="button" id="btnLogHtml">Log html contents of this div</button>
+            <button type="button" id="btnSetHtml">Change html contents</button>
+        </div>
+
+        <h3>.addClass(), removeClass() and toggleClass()</h3>
+        <div id="addClass">
+            <p id="paragraphToManipulate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore labore minus dolor facilis similique. Quis dolorem nesciunt officiis voluptate at amet cupiditate minus, impedit maxime? Quaerat praesentium nobis expedita at.</p>
+            <button type="button" id="btnAddClass">Add CSS class "style1"</button>
+            <button type="button" id="btnRemoveClass">Remove CSS class "style1"</button>
+            <button type="button" id="btnToggleClass">Toggle CSS class "style2" on/off</button>
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="demo.js"></script>
+
+</body>
+
+</html>
